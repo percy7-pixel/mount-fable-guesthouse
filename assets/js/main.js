@@ -13,7 +13,7 @@ const CONFIG = {
      dashes (for Cameroon that is 237 followed by the 9-digit mobile number).
      This is a SHOWCASE PLACEHOLDER, not a real number: replace this single
      line before showing the site to a real guesthouse client. */
-  whatsappNumber: '237600000000',
+  whatsappNumber: '237653317507',
 
   generalMessage:
     'Hello Mount Fable Guesthouse, I found your website and would like to ask about ' +
@@ -34,7 +34,7 @@ function isUsableNumber(value) {
   return true;
 }
 
-/* +237 600 000 000 from the single configured value */
+/* +237 653 317 507 from the single configured value */
 function formatNumber(value) {
   const d = String(value || '').replace(/[^\d]/g, '');
   if (d.length === 12) {
@@ -310,8 +310,8 @@ $$('.js-room').forEach((link) => {
   function show(i) {
     index = (i + shots.length) % shots.length;
     const shot = shots[index];
-    const full = shot.getAttribute('data-full');
     const thumb = shot.querySelector('img');
+    const full = shot.getAttribute('data-full') || (thumb ? thumb.src : '');
     img.src = full;
     img.alt = thumb ? thumb.alt : '';
     if (cap) cap.textContent = shot.getAttribute('data-caption') || '';

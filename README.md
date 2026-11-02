@@ -40,11 +40,11 @@ no database, no authentication, no payment gateway.
 Open `assets/js/main.js`:
 
 ```js
-whatsappNumber: '237600000000',   // digits only, full international format
+whatsappNumber: '237653317507',   // digits only, full international format
 ```
 
 That is the **only** place the number exists. Every WhatsApp button, every link and the
-footer/menu display (`+237 600 000 000`) is generated from it at load time — nothing to
+footer/menu display (`+237 653 317 507`) is generated from it at load time — nothing to
 change in `index.html`. The display format is derived automatically.
 
 The current value is a **showcase placeholder**, not a real number. If it is ever blank or
